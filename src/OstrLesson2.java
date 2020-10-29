@@ -46,30 +46,23 @@ public class OstrLesson2
             System.out.print("\r\n");
         }
 
-        //** Задать одномерный массив и
+        //Задать одномерный массив и
         // найти в нем минимальный и максимальный элементы (без помощи интернета);
         System.out.println("\n Задание 5 ");
 
         int[] arr5 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int min = arr5[0], max = arr5[0], indMax = 0, indMin = 0;
-        for (int i = 0; i < arr5.length; i++) {
-            if (arr5[i] > max) {
+        for (int i = 0; i < arr5.length; i++)
+        {
+            if (arr5[i] > max)
+            {
                 max = arr5[i];
                 indMax = i;
             }
-            if (arr5[i] < min) {
-                min = arr5[i];
-                indMin = i;
-            }
+
         }
         System.out.println("Максимальный элемент  " + indMax + " = " + max);
         System.out.println("Минимальный элемент  " + indMin + "  = " + min);
-
-
-
-
-
-
     }
 }
 
